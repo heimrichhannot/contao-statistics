@@ -1,0 +1,34 @@
+{
+    "name": "heimrichhannot/contao-statistics",
+    "description":"This module offers some basic statistics-relevant modules",
+    "keywords":["contao", "statistics", "statistic", "chart", "charts", "diagram", "diagrams", "developer"],
+    "type": "contao-module",
+    "homepage":"https://github.com/heimrichhannot/contao-statistics",
+    "license":"LGPL-3.0+",
+    "authors":[
+        {
+            "name":"Heimrich & Hannot",
+            "email":"digitales@heimrich-hannot.de",
+            "homepage":"http://www.heimrich-hannot.de",
+            "role":"Developer"
+        }
+    ],
+    "support":{
+        "issues":"https://github.com/heimrichhannot/contao-statistics/issues"
+    },
+    "require": {
+        "contao/core": ">=3.2,<4-dev",
+        "heimrichhannot/contao-haste_plus": ">=1.4.12",
+		"heimrichhannot/contao-fieldpalette": ">=1.0.3"
+	},
+    "autoload": {
+        "classmap": [""]
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/statistics"
+            }
+        }
+    }
+}

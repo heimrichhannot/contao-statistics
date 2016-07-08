@@ -1,0 +1,8 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+<div class="wrapper <?= $this->strWrapperClass ?>" id="<?= $this->strWrapperId ?>">
+	<canvas data-labels="<?= implode(',', $this->labels); ?>" data-data="<?= implode(',', $this->data); ?>"></canvas>
+</div>
+
+<?php $this->endblock(); ?>
