@@ -1,0 +1,9 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+    <div class="wrapper statistics_chart statistics_chart_<?= $this->type; ?>" id="<?= $this->strWrapperId ?>">
+        <canvas data-config="<?= $this->config; ?>" data-type="<?= $this->type; ?>" data-labels="<?= $this->labels; ?>"
+                data-data="<?= $this->values; ?>"></canvas>
+    </div>
+
+<?php $this->endblock(); ?>
